@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Iofi-bot import StartTime, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import sudo_plus
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import StartTime, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import sudo_plus
+from Iofibot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",

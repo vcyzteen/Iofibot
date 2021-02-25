@@ -6,7 +6,7 @@ from requests import get
 from telegram import Bot, Update, ParseMode
 from telegram.ext import Updater, CommandHandler
 from telegram.ext import CallbackContext, run_async
-from Iofi-bot import WEATHER_API, dispatcher
+from Iofibot import WEATHER_API, dispatcher
 
 
 @run_async

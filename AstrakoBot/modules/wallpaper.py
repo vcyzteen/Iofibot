@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from Iofi-bot import SUPPORT_CHAT, WALL_API, dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import SUPPORT_CHAT, WALL_API, dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

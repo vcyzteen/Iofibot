@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from Iofi-bot import TIME_API_KEY, dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import TIME_API_KEY, dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

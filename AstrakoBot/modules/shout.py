@@ -1,5 +1,5 @@
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

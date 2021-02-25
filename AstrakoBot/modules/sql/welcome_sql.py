@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from Iofi-bot.modules.helper_funcs.msg_types import Types
-from Iofi-bot.modules.sql import BASE, SESSION
+from Iofibot.modules.helper_funcs.msg_types import Types
+from Iofibot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"

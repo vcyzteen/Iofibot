@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from Iofi-bot.modules.sql import SESSION, BASE
+from Iofibot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):

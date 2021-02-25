@@ -12,16 +12,16 @@ import json
 import urllib.request
 import urllib.parse
 import requests
-from Iofi-bot import DEV_USERS, OWNER_ID, DRAGONS, DEMONS, WOLVES, dispatcher, updater
-from Iofi-bot.__main__ import STATS, TOKEN, USER_INFO
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.filters import CustomFilters
-from Iofi-bot.modules.helper_funcs.chat_status import sudo_plus, user_admin
-from Iofi-bot.modules.helper_funcs.extraction import extract_user
+from Iofibot import DEV_USERS, OWNER_ID, DRAGONS, DEMONS, WOLVES, dispatcher, updater
+from Iofibot.__main__ import STATS, TOKEN, USER_INFO
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.filters import CustomFilters
+from Iofibot.modules.helper_funcs.chat_status import sudo_plus, user_admin
+from Iofibot.modules.helper_funcs.extraction import extract_user
 from telegram import MessageEntity, ParseMode, Update, constants
 from telegram.error import BadRequest
 from emoji import UNICODE_EMOJI
-from Iofi-bot.modules.helper_funcs.alternate import typing_action
+from Iofibot.modules.helper_funcs.alternate import typing_action
 from wikipedia.exceptions import DisambiguationError, PageError
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html

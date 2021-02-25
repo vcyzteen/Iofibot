@@ -3,7 +3,7 @@ from covid import Covid
 from telegram import Bot, Update, ParseMode
 from telegram.ext import Updater, CommandHandler
 from telegram.ext import CallbackContext, run_async
-from Iofi-bot import dispatcher
+from Iofibot import dispatcher
 
 
 @run_async

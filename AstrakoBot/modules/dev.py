@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import Iofi-bot
+import Iofibot
 
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
+from Iofibot import dispatcher
+from Iofibot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -19,12 +19,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {Iofi-bot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {Iofibot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        Iofi-bot.ALLOW_CHATS = True
+        Iofibot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        Iofi-bot.ALLOW_CHATS = False
+        Iofibot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return

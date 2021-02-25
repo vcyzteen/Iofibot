@@ -1,5 +1,5 @@
-from Iofi-bot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from Iofi-bot import DRAGONS
+from Iofibot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Iofibot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -44,11 +44,11 @@ async def is_user_admin(user_id: int, chat_id):
 
 async def saitama_is_admin(chat_id: int):
     status = False
-    Iofi-bot = await telethn.get_me()
+    Iofibot = await telethn.get_me()
     async for user in telethn.iter_participants(
         chat_id, filter=ChannelParticipantsAdmins
     ):
-        if Iofi-bot.id == user.id:
+        if Iofibot.id == user.id:
             status = True
             break
     return status

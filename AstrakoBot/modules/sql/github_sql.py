@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer
 
-from Iofi-bot.modules.helper_funcs.msg_types import Types
-from Iofi-bot.modules.sql import SESSION, BASE
+from Iofibot.modules.helper_funcs.msg_types import Types
+from Iofibot.modules.sql import SESSION, BASE
 
 
 class GitHub(BASE):

@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Iofi-bot.modules.sql.notes_sql as sql
-from Iofi-bot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Iofi-bot.__main__ import DATA_IMPORT
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.helper_funcs.alternate import typing_action
+import Iofibot.modules.sql.notes_sql as sql
+from Iofibot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Iofibot.__main__ import DATA_IMPORT
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.helper_funcs.alternate import typing_action
 
-# from Iofi-bot.modules.rules import get_rules
-import Iofi-bot.modules.sql.rules_sql as rulessql
+# from Iofibot.modules.rules import get_rules
+import Iofibot.modules.sql.rules_sql as rulessql
 
-# from Iofi-bot.modules.sql import warns_sql as warnssql
-import Iofi-bot.modules.sql.blacklist_sql as blacklistsql
-from Iofi-bot.modules.sql import disable_sql as disabledsql
+# from Iofibot.modules.sql import warns_sql as warnssql
+import Iofibot.modules.sql.blacklist_sql as blacklistsql
+from Iofibot.modules.sql import disable_sql as disabledsql
 
-# from Iofi-bot.modules.sql import cust_filters_sql as filtersql
-# import Iofi-bot.modules.sql.welcome_sql as welcsql
-import Iofi-bot.modules.sql.locks_sql as locksql
-from Iofi-bot.modules.connection import connected
+# from Iofibot.modules.sql import cust_filters_sql as filtersql
+# import Iofibot.modules.sql.welcome_sql as welcsql
+import Iofibot.modules.sql.locks_sql as locksql
+from Iofibot.modules.connection import connected
 
 
 @run_async
@@ -325,7 +325,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("Iofi-bot{}.backup".format(chat_id), "w") as f:
+    with open("Iofibot{}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -341,15 +341,15 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("Iofi-bot{}.backup".format(chat_id), "rb"),
-        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Iofi-bot-Backup` was specially made for notes.".format(
+        document=open("Iofibot{}.backup".format(chat_id), "rb"),
+        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Iofibot-Backup` was specially made for notes.".format(
             chat.title, chat_id, tgl
         ),
         timeout=360,
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("Iofi-bot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("Iofibot{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data

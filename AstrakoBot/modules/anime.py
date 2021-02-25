@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

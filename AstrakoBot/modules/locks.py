@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import Iofi-bot.modules.sql.locks_sql as sql
-from Iofi-bot import dispatcher, DRAGONS, LOGGER
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import (
+import Iofibot.modules.sql.locks_sql as sql
+from Iofibot import dispatcher, DRAGONS, LOGGER
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Iofi-bot.modules.log_channel import loggable
-from Iofi-bot.modules.connection import connected
-from Iofi-bot.modules.sql.approve_sql import is_approved
-from Iofi-bot.modules.helper_funcs.alternate import send_message, typing_action
+from Iofibot.modules.log_channel import loggable
+from Iofibot.modules.connection import connected
+from Iofibot.modules.sql.approve_sql import is_approved
+from Iofibot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

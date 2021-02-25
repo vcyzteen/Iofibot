@@ -1,16 +1,16 @@
 # Config files, logs and stuff
-Iofi-bot/modules/helper_funcs/temp.txt
-Iofi-bot/elevated_users.json
-Iofi-bot/config.py
-Iofi-bot/config.ini
+Iofibot/modules/helper_funcs/temp.txt
+Iofibot/elevated_users.json
+Iofibot/config.py
+Iofibot/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-Iofi-bot/*.session
-Iofi-bot/*.session-journal
-Iofi-bot.session-journal
+Iofibot/*.session
+Iofibot/*.session-journal
+Iofibot.session-journal
 *.session-journal
 *.session
 

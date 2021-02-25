@@ -1,9 +1,9 @@
 from time import sleep
 
-import Iofi-bot.modules.sql.global_bans_sql as gban_sql
-import Iofi-bot.modules.sql.users_sql as user_sql
-from Iofi-bot import DEV_USERS, OWNER_ID, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
+import Iofibot.modules.sql.global_bans_sql as gban_sql
+import Iofibot.modules.sql.users_sql as user_sql
+from Iofibot import DEV_USERS, OWNER_ID, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

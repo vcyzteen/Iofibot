@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import Iofi-bot.modules.fun_strings as fun_strings
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import is_user_admin
-from Iofi-bot.modules.helper_funcs.extraction import extract_user
+import Iofibot.modules.fun_strings as fun_strings
+from Iofibot import dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import is_user_admin
+from Iofibot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async

@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from Iofi-bot.modules.helper_funcs.misc import is_module_loaded
+from Iofibot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from Iofi-bot import EVENT_LOGS, LOGGER, dispatcher
-    from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-    from Iofi-bot.modules.sql import log_channel_sql as sql
+    from Iofibot import EVENT_LOGS, LOGGER, dispatcher
+    from Iofibot.modules.helper_funcs.chat_status import user_admin
+    from Iofibot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)

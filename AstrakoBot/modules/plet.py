@@ -13,10 +13,10 @@ from telegram.ext import (
 )
 
 from telegram.ext import Filters, MessageHandler, run_async
-from Iofi-bot.modules.helper_funcs.extraction import extract_user_and_text
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.thonkify_dict import thonkifydict
+from Iofibot.modules.helper_funcs.extraction import extract_user_and_text
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher
+from Iofibot.modules.thonkify_dict import thonkifydict
 
 
 @run_async

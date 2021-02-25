@@ -1,7 +1,7 @@
 import speedtest
-from Iofi-bot import DEV_USERS, dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
+from Iofibot import DEV_USERS, dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 

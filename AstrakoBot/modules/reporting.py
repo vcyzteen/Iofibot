@@ -1,9 +1,9 @@
 import html
 
-from Iofi-bot import LOGGER, DRAGONS, WOLVES, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Iofi-bot.modules.log_channel import loggable
-from Iofi-bot.modules.sql import reporting_sql as sql
+from Iofibot import LOGGER, DRAGONS, WOLVES, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Iofibot.modules.log_channel import loggable
+from Iofibot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

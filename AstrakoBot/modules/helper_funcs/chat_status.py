@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from Iofi-bot import (
+from Iofibot import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -401,6 +401,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Iofi-bot.modules import connection
+from Iofibot.modules import connection
 
 connected = connection.connected

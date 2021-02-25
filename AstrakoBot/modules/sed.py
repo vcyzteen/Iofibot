@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from Iofi-bot import LOGGER, dispatcher
-from Iofi-bot.modules.disable import DisableAbleMessageHandler
-from Iofi-bot.modules.helper_funcs.regex_helper import infinite_loop_check
+from Iofibot import LOGGER, dispatcher
+from Iofibot.modules.disable import DisableAbleMessageHandler
+from Iofibot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Iofi-bot import (
+from Iofibot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -23,15 +23,15 @@ from Iofi-bot import (
     dispatcher,
     sw,
 )
-from Iofi-bot.__main__ import STATS, TOKEN, USER_INFO
-import Iofi-bot.modules.sql.userinfo_sql as sql
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.sql.global_bans_sql import is_user_gbanned
-from Iofi-bot.modules.sql.afk_sql import is_afk, check_afk_status
-from Iofi-bot.modules.sql.users_sql import get_user_num_chats
-from Iofi-bot.modules.helper_funcs.chat_status import sudo_plus
-from Iofi-bot.modules.helper_funcs.extraction import extract_user
-from Iofi-bot import telethn as Iofi-botTelethonClient, DRAGONS, DEMONS
+from Iofibot.__main__ import STATS, TOKEN, USER_INFO
+import Iofibot.modules.sql.userinfo_sql as sql
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.sql.global_bans_sql import is_user_gbanned
+from Iofibot.modules.sql.afk_sql import is_afk, check_afk_status
+from Iofibot.modules.sql.users_sql import get_user_num_chats
+from Iofibot.modules.helper_funcs.chat_status import sudo_plus
+from Iofibot.modules.helper_funcs.extraction import extract_user
+from Iofibot import telethn as IofibotTelethonClient, DRAGONS, DEMONS
 
 
 @run_async
@@ -77,7 +77,7 @@ def get_id(update: Update, context: CallbackContext):
             )
 
 
-@Iofi-botTelethonClient.on(
+@IofibotTelethonClient.on(
     events.NewMessage(pattern="/ginfo ", from_users=(DRAGONS or []) + (DEMONS or []))
 )
 async def group_info(event) -> None:

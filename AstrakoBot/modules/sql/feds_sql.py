@@ -1,7 +1,7 @@
 import threading
 
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.sql import BASE, SESSION
+from Iofibot import dispatcher
+from Iofibot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 

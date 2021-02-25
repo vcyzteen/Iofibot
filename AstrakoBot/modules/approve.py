@@ -1,11 +1,11 @@
 import html
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot import dispatcher, DRAGONS
-from Iofi-bot.modules.helper_funcs.extraction import extract_user
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher, DRAGONS
+from Iofibot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
-import Iofi-bot.modules.sql.approve_sql as sql
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.log_channel import loggable
+import Iofibot.modules.sql.approve_sql as sql
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

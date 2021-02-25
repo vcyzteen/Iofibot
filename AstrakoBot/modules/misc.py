@@ -1,6 +1,6 @@
-from Iofi-bot.modules.helper_funcs.chat_status import sudo_plus
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot import dispatcher
+from Iofibot.modules.helper_funcs.chat_status import sudo_plus
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update

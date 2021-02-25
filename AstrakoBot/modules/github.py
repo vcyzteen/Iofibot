@@ -1,13 +1,13 @@
 import html
 from typing import Optional, List
 
-import Iofi-bot.modules.helper_funcs.git_api as api
-import Iofi-bot.modules.sql.github_sql as sql
+import Iofibot.modules.helper_funcs.git_api as api
+import Iofibot.modules.sql.github_sql as sql
 
-from Iofi-bot import dispatcher, OWNER_ID, EVENT_LOGS, DRAGONS, DEMONS
-from Iofi-bot.modules.helper_funcs.filters import CustomFilters
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofibot import dispatcher, OWNER_ID, EVENT_LOGS, DRAGONS, DEMONS
+from Iofibot.modules.helper_funcs.filters import CustomFilters
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.disable import DisableAbleCommandHandler
 
 from telegram.ext import (
     CallbackContext,

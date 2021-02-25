@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import Iofi-bot.modules.sql.connection_sql as sql
-from Iofi-bot import dispatcher, DRAGONS, DEV_USERS
-from Iofi-bot.modules.helper_funcs import chat_status
-from Iofi-bot.modules.helper_funcs.alternate import send_message, typing_action
+import Iofibot.modules.sql.connection_sql as sql
+from Iofibot import dispatcher, DRAGONS, DEV_USERS
+from Iofibot.modules.helper_funcs import chat_status
+from Iofibot.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 

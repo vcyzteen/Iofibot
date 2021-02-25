@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from Iofi-bot import LOGGER
-from Iofi-bot.modules.users import get_user_id
+from Iofibot import LOGGER
+from Iofibot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

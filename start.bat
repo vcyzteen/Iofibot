@@ -1,4 +1,4 @@
 @echo off
-TITLE Iofi-bot
-:: Enables virtual env mode and then starts Iofi-bot
-env\scripts\activate.bat && py -m Iofi-bot
+TITLE Iofibot
+:: Enables virtual env mode and then starts Iofibot
+env\scripts\activate.bat && py -m Iofibot

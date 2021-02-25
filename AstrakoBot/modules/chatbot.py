@@ -3,14 +3,14 @@ import html
 # AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
 from time import sleep, time
 
-import Iofi-bot.modules.sql.chatbot_sql as sql
+import Iofibot.modules.sql.chatbot_sql as sql
 from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 from coffeehouse.lydia import LydiaAI
-from Iofi-bot import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.helper_funcs.filters import CustomFilters
-from Iofi-bot.modules.log_channel import gloggable
+from Iofibot import AI_API_KEY, OWNER_ID, SUPPORT_CHAT, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.helper_funcs.filters import CustomFilters
+from Iofibot.modules.log_channel import gloggable
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import (
@@ -80,7 +80,7 @@ def remove_chat(update: Update, context: CallbackContext):
 
 def check_message(context: CallbackContext, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "Iofi-bot":
+    if message.text.lower() == "Iofibot":
         return True
     if reply_msg:
         if reply_msg.from_user.id == context.bot.get_me().id:
@@ -142,7 +142,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows Iofi-bot to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows Iofibot to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 *Admins only:*

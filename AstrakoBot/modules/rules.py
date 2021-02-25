@@ -1,9 +1,9 @@
 from typing import Optional
 
-import Iofi-bot.modules.sql.rules_sql as sql
-from Iofi-bot import dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.helper_funcs.string_handling import markdown_parser
+import Iofibot.modules.sql.rules_sql as sql
+from Iofibot import dispatcher
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import Iofi-bot.modules.sql.feds_sql as sql
-from Iofi-bot import (
+import Iofibot.modules.sql.feds_sql as sql
+from Iofibot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -16,15 +16,15 @@ from Iofi-bot import (
     WOLVES,
     dispatcher,
 )
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.alternate import send_message
-from Iofi-bot.modules.helper_funcs.chat_status import is_user_admin
-from Iofi-bot.modules.helper_funcs.extraction import (
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.alternate import send_message
+from Iofibot.modules.helper_funcs.chat_status import is_user_admin
+from Iofibot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from Iofi-bot.modules.helper_funcs.string_handling import markdown_parser
+from Iofibot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -654,7 +654,7 @@ def fed_ban(update: Update, context: CallbackContext):
 
     if fban:
         fed_name = info["fname"]
-        # https://t.me/Iofi-botSupport/41606 // https://t.me/Iofi-botSupport/41619
+        # https://t.me/IofibotSupport/41606 // https://t.me/IofibotSupport/41619
         # starting = "The reason fban is replaced for {} in the Federation <b>{}</b>.".format(user_target, fed_name)
         # send_message(update.effective_message, starting, parse_mode=ParseMode.HTML)
 
@@ -1404,10 +1404,10 @@ def fed_ban_list(update: Update, context: CallbackContext):
                 backups += json.dumps(json_parser)
                 backups += "\n"
             with BytesIO(str.encode(backups)) as output:
-                output.name = "Iofi-bot_fbanned_users.json"
+                output.name = "Iofibot_fbanned_users.json"
                 update.effective_message.reply_document(
                     document=output,
-                    filename="Iofi-bot_fbanned_users.json",
+                    filename="Iofibot_fbanned_users.json",
                     caption="Total {} User are blocked by the Federation {}.".format(
                         len(getfban), info["fname"]
                     ),
@@ -1449,10 +1449,10 @@ def fed_ban_list(update: Update, context: CallbackContext):
                 )
                 backups += "\n"
             with BytesIO(str.encode(backups)) as output:
-                output.name = "Iofi-bot_fbanned_users.csv"
+                output.name = "Iofibot_fbanned_users.csv"
                 update.effective_message.reply_document(
                     document=output,
-                    filename="Iofi-bot_fbanned_users.csv",
+                    filename="Iofibot_fbanned_users.csv",
                     caption="Total {} User are blocked by Federation {}.".format(
                         len(getfban), info["fname"]
                     ),

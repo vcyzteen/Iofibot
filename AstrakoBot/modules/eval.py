@@ -6,8 +6,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from Iofi-bot import LOGGER, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
+from Iofibot import LOGGER, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
@@ -76,7 +76,7 @@ def do(func, bot, update):
 
     os.chdir(os.getcwd())
     with open(
-        os.path.join(os.getcwd(), "Iofi-bot/modules/helper_funcs/temp.txt"), "w"
+        os.path.join(os.getcwd(), "Iofibot/modules/helper_funcs/temp.txt"), "w"
     ) as temp:
         temp.write(body)
 

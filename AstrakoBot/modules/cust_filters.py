@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Iofi-bot import dispatcher, LOGGER, DRAGONS
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.handlers import MessageHandlerChecker
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin
-from Iofi-bot.modules.helper_funcs.extraction import extract_text
-from Iofi-bot.modules.helper_funcs.filters import CustomFilters
-from Iofi-bot.modules.helper_funcs.misc import build_keyboard_parser
-from Iofi-bot.modules.helper_funcs.msg_types import get_filter_type
-from Iofi-bot.modules.helper_funcs.string_handling import (
+from Iofibot import dispatcher, LOGGER, DRAGONS
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.handlers import MessageHandlerChecker
+from Iofibot.modules.helper_funcs.chat_status import user_admin
+from Iofibot.modules.helper_funcs.extraction import extract_text
+from Iofibot.modules.helper_funcs.filters import CustomFilters
+from Iofibot.modules.helper_funcs.misc import build_keyboard_parser
+from Iofibot.modules.helper_funcs.msg_types import get_filter_type
+from Iofibot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Iofi-bot.modules.sql import cust_filters_sql as sql
+from Iofibot.modules.sql import cust_filters_sql as sql
 
-from Iofi-bot.modules.connection import connected
+from Iofibot.modules.connection import connected
 
-from Iofi-bot.modules.helper_funcs.alternate import send_message, typing_action
+from Iofibot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

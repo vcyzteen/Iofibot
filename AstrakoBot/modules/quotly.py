@@ -11,7 +11,7 @@ import json
 import os
 import re
 from telethon import events
-from Iofi-bot import telethn
+from Iofibot import telethn
 
 COLORS = [
     "#F07975",

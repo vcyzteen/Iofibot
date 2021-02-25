@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import Iofi-bot.modules.sql.users_sql as sql
-from Iofi-bot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from Iofi-bot.modules.sql.users_sql import get_all_users
+import Iofibot.modules.sql.users_sql as sql
+from Iofibot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Iofibot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Iofibot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5

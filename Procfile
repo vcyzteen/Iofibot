@@ -1,3 +1,3 @@
-worker: python3 -m Iofi-bot
-web: python3 -m Iofi-bot
+worker: python3 -m Iofibot
+web: python3 -m Iofibot
 ps:scale worker=1

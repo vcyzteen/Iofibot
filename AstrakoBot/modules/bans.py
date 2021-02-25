@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from Iofi-bot import (
+from Iofibot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -14,8 +14,8 @@ from Iofi-bot import (
     WOLVES,
     dispatcher,
 )
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import (
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -26,9 +26,9 @@ from Iofi-bot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from Iofi-bot.modules.helper_funcs.extraction import extract_user_and_text
-from Iofi-bot.modules.helper_funcs.string_handling import extract_time
-from Iofi-bot.modules.log_channel import gloggable, loggable
+from Iofibot.modules.helper_funcs.extraction import extract_user_and_text
+from Iofibot.modules.helper_funcs.string_handling import extract_time
+from Iofibot.modules.log_channel import gloggable, loggable
 
 
 @run_async

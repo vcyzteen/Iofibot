@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import Iofi-bot.modules.sql.blacklist_sql as sql
-from Iofi-bot import dispatcher, LOGGER
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Iofi-bot.modules.helper_funcs.extraction import extract_text
-from Iofi-bot.modules.helper_funcs.misc import split_message
-from Iofi-bot.modules.log_channel import loggable
-from Iofi-bot.modules.warns import warn
-from Iofi-bot.modules.helper_funcs.string_handling import extract_time
-from Iofi-bot.modules.connection import connected
-from Iofi-bot.modules.sql.approve_sql import is_approved
-from Iofi-bot.modules.helper_funcs.alternate import send_message, typing_action
+import Iofibot.modules.sql.blacklist_sql as sql
+from Iofibot import dispatcher, LOGGER
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Iofibot.modules.helper_funcs.extraction import extract_text
+from Iofibot.modules.helper_funcs.misc import split_message
+from Iofibot.modules.log_channel import loggable
+from Iofibot.modules.warns import warn
+from Iofibot.modules.helper_funcs.string_handling import extract_time
+from Iofibot.modules.connection import connected
+from Iofibot.modules.sql.approve_sql import is_approved
+from Iofibot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

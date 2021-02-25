@@ -1,13 +1,13 @@
-from Iofi-bot.modules.helper_funcs.telethn.chatstatus import (
+from Iofibot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
-from Iofi-bot import telethn
+from Iofibot import telethn
 import time
 from telethon import events
 
-from Iofi-bot import telethn
-from Iofi-bot.modules.helper_funcs.telethn.chatstatus import (
+from Iofibot import telethn
+from Iofibot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )

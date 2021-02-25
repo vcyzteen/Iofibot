@@ -1,6 +1,6 @@
-import Iofi-bot.modules.sql.blacklistusers_sql as sql
-from Iofi-bot import ALLOW_EXCL
-from Iofi-bot import DEV_USERS, DRAGONS, DEMONS, WOLVES
+import Iofibot.modules.sql.blacklistusers_sql as sql
+from Iofibot import ALLOW_EXCL
+from Iofibot import DEV_USERS, DRAGONS, DEMONS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters

@@ -90,7 +90,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Iofi-bot.config import Development as Config
+    from Iofibot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -166,7 +166,7 @@ else:
         LOGGER.warning("Can't connect to SpamWatch!")
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Iofi-bot", API_ID, API_HASH)
+telethn = TelegramClient("Iofibot", API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -175,7 +175,7 @@ WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 
 # Load at end to ensure all prev variables have been set
-from Iofi-bot.modules.helper_funcs.handlers import (
+from Iofibot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,

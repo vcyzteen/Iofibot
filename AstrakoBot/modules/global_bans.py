@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Iofi-bot.modules.sql.global_bans_sql as sql
-from Iofi-bot.modules.sql.users_sql import get_user_com_chats
-from Iofi-bot import (
+import Iofibot.modules.sql.global_bans_sql as sql
+from Iofibot.modules.sql.users_sql import get_user_com_chats
+from Iofibot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -29,16 +29,16 @@ from Iofi-bot import (
     sw,
     dispatcher,
 )
-from Iofi-bot.modules.helper_funcs.chat_status import (
+from Iofibot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Iofi-bot.modules.helper_funcs.extraction import (
+from Iofibot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Iofi-bot.modules.helper_funcs.misc import send_to_list
+from Iofibot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 

@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import Iofi-bot.modules.sql.blacklistusers_sql as sql
-from Iofi-bot import (
+import Iofibot.modules.sql.blacklistusers_sql as sql
+from Iofibot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -9,12 +9,12 @@ from Iofi-bot import (
     WOLVES,
     dispatcher,
 )
-from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
-from Iofi-bot.modules.helper_funcs.extraction import (
+from Iofibot.modules.helper_funcs.chat_status import dev_plus
+from Iofibot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Iofi-bot.modules.log_channel import gloggable
+from Iofibot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

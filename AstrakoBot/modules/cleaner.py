@@ -1,14 +1,14 @@
 import html
 
-from Iofi-bot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Iofi-bot.modules.disable import DisableAbleCommandHandler
-from Iofi-bot.modules.helper_funcs.chat_status import (
+from Iofibot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Iofibot.modules.disable import DisableAbleCommandHandler
+from Iofibot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Iofi-bot.modules.sql import cleaner_sql as sql
+from Iofibot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -228,7 +228,7 @@ Blue text cleaner removed any made up commands that people send in your chat.
  • `/listblue`*:* list currently whitelisted commands
  
  *Following are Disasters only commands, admins cannot use these:*
- • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Iofi-bot.
+ • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Iofibot.
  • `/ungignoreblue <word>`*:* remove said command from global cleaning list
 """
 
