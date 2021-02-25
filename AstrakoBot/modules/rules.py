@@ -1,9 +1,9 @@
 from typing import Optional
 
-import AstrakoBot.modules.sql.rules_sql as sql
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin
-from AstrakoBot.modules.helper_funcs.string_handling import markdown_parser
+import Iofi-bot.modules.sql.rules_sql as sql
+from Iofi-bot import dispatcher
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin
+from Iofi-bot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

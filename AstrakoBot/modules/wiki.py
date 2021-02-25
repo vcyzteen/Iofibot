@@ -1,6 +1,6 @@
 import wikipedia
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError

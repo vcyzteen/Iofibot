@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import AstrakoBot.modules.sql.welcome_sql as sql
-import AstrakoBot
-from AstrakoBot import (
+import Iofi-bot.modules.sql.welcome_sql as sql
+import Iofi-bot
+from Iofi-bot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -18,18 +18,18 @@ from AstrakoBot import (
     dispatcher,
     JOIN_LOGGER,
 )
-from AstrakoBot.modules.helper_funcs.chat_status import (
+from Iofi-bot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from AstrakoBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from AstrakoBot.modules.helper_funcs.msg_types import get_welcome_type
-from AstrakoBot.modules.helper_funcs.string_handling import (
+from Iofi-bot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Iofi-bot.modules.helper_funcs.msg_types import get_welcome_type
+from Iofi-bot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from AstrakoBot.modules.log_channel import loggable
-from AstrakoBot.modules.sql.global_bans_sql import is_user_gbanned
+from Iofi-bot.modules.log_channel import loggable
+from Iofi-bot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -252,7 +252,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not AstrakoBot.ALLOW_CHATS:
+                if not Iofi-bot.ALLOW_CHATS:
                     with suppress(BadRequest):
                         update.effective_message.reply_text(
                             f"Groups are disabled for {bot.first_name}, I'm outta here."

@@ -1,6 +1,6 @@
 import subprocess
 
-from AstrakoBot import OWNER_ID, LOGGER, dispatcher
+from Iofi-bot import OWNER_ID, LOGGER, dispatcher
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.ext.dispatcher import run_async

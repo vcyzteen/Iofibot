@@ -3,7 +3,7 @@ import requests
 import re
 from telethon.events import NewMessage
 from telethon import events
-from AstrakoBot import telethn
+from Iofi-bot import telethn
 from telethon import types
 from telethon.tl import functions
 

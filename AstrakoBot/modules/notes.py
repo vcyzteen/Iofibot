@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import AstrakoBot.modules.sql.notes_sql as sql
-from AstrakoBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from AstrakoBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from AstrakoBot.modules.helper_funcs.msg_types import get_note_type
-from AstrakoBot.modules.helper_funcs.string_handling import (
+import Iofi-bot.modules.sql.notes_sql as sql
+from Iofi-bot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot.modules.helper_funcs.handlers import MessageHandlerChecker
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin, connection_status
+from Iofi-bot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Iofi-bot.modules.helper_funcs.msg_types import get_note_type
+from Iofi-bot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (

@@ -1,13 +1,13 @@
 import html
 from typing import Optional, List
 
-import AstrakoBot.modules.helper_funcs.git_api as api
-import AstrakoBot.modules.sql.github_sql as sql
+import Iofi-bot.modules.helper_funcs.git_api as api
+import Iofi-bot.modules.sql.github_sql as sql
 
-from AstrakoBot import dispatcher, OWNER_ID, EVENT_LOGS, DRAGONS, DEMONS
-from AstrakoBot.modules.helper_funcs.filters import CustomFilters
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher, OWNER_ID, EVENT_LOGS, DRAGONS, DEMONS
+from Iofi-bot.modules.helper_funcs.filters import CustomFilters
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
 
 from telegram.ext import (
     CallbackContext,

@@ -11,8 +11,8 @@ from telegram import TelegramError, Update
 from telegram.ext import run_async, CallbackContext
 from telegram.utils.helpers import mention_html
 
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 

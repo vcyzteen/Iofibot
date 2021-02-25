@@ -1,4 +1,4 @@
-# Magisk Module- Module from AstrakoBot
+# Magisk Module- Module from Iofi-bot
 # Inspired from RaphaelGang's android.py
 # By DAvinash97
 
@@ -8,7 +8,7 @@ from telegram import Bot, Update, ParseMode
 from telegram.ext import Updater, CommandHandler
 from telegram.ext import CallbackContext, run_async
 from ujson import loads
-from AstrakoBot import dispatcher
+from Iofi-bot import dispatcher
 
 
 @run_async

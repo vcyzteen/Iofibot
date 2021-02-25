@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import AstrakoBot.modules.sql.blacklistusers_sql as sql
-from AstrakoBot import (
+import Iofi-bot.modules.sql.blacklistusers_sql as sql
+from Iofi-bot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -9,12 +9,12 @@ from AstrakoBot import (
     WOLVES,
     dispatcher,
 )
-from AstrakoBot.modules.helper_funcs.chat_status import dev_plus
-from AstrakoBot.modules.helper_funcs.extraction import (
+from Iofi-bot.modules.helper_funcs.chat_status import dev_plus
+from Iofi-bot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AstrakoBot.modules.log_channel import gloggable
+from Iofi-bot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

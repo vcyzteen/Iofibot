@@ -1,5 +1,5 @@
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot import dispatcher
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher
 
 from telegram.ext import CallbackContext, Filters, CommandHandler
 

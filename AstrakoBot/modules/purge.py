@@ -1,13 +1,13 @@
-from AstrakoBot.modules.helper_funcs.telethn.chatstatus import (
+from Iofi-bot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
-from AstrakoBot import telethn
+from Iofi-bot import telethn
 import time
 from telethon import events
 
-from AstrakoBot import telethn
-from AstrakoBot.modules.helper_funcs.telethn.chatstatus import (
+from Iofi-bot import telethn
+from Iofi-bot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )

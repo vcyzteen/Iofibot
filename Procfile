@@ -1,3 +1,3 @@
-worker: python3 -m AstrakoBot
-web: python3 -m AstrakoBot
+worker: python3 -m Iofi-bot
+web: python3 -m Iofi-bot
 ps:scale worker=1

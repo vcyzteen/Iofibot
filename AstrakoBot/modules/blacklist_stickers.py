@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import AstrakoBot.modules.sql.blsticker_sql as sql
-from AstrakoBot import LOGGER, dispatcher
-from AstrakoBot.modules.connection import connected
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot.modules.helper_funcs.alternate import send_message
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AstrakoBot.modules.helper_funcs.misc import split_message
-from AstrakoBot.modules.helper_funcs.string_handling import extract_time
+import Iofi-bot.modules.sql.blsticker_sql as sql
+from Iofi-bot import LOGGER, dispatcher
+from Iofi-bot.modules.connection import connected
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot.modules.helper_funcs.alternate import send_message
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Iofi-bot.modules.helper_funcs.misc import split_message
+from Iofi-bot.modules.helper_funcs.string_handling import extract_time
 
-from AstrakoBot.modules.log_channel import loggable
-from AstrakoBot.modules.warns import warn
+from Iofi-bot.modules.log_channel import loggable
+from Iofi-bot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

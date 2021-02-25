@@ -3,8 +3,8 @@ from tswift import Song
 from telegram import Bot, Update, Message, Chat
 from telegram.ext import run_async
 from telegram.ext import Updater, CommandHandler, CallbackContext
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

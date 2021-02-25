@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from AstrakoBot import TIME_API_KEY, dispatcher
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import TIME_API_KEY, dispatcher
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

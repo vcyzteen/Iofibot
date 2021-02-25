@@ -14,10 +14,10 @@ from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from telethon import events
 
-from AstrakoBot import dispatcher
-from AstrakoBot import telethn
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot.utils import progress
+from Iofi-bot import dispatcher
+from Iofi-bot import telethn
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot.utils import progress
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url

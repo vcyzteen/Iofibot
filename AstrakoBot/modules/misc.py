@@ -1,6 +1,6 @@
-from AstrakoBot.modules.helper_funcs.chat_status import sudo_plus
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot import dispatcher
+from Iofi-bot.modules.helper_funcs.chat_status import sudo_plus
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update

@@ -1,7 +1,7 @@
 import threading
 
-from AstrakoBot import dispatcher
-from AstrakoBot.modules.sql import BASE, SESSION
+from Iofi-bot import dispatcher
+from Iofi-bot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,

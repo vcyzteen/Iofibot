@@ -1,9 +1,9 @@
 import html
 
-from AstrakoBot import LOGGER, DRAGONS, WOLVES, dispatcher
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AstrakoBot.modules.log_channel import loggable
-from AstrakoBot.modules.sql import reporting_sql as sql
+from Iofi-bot import LOGGER, DRAGONS, WOLVES, dispatcher
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Iofi-bot.modules.log_channel import loggable
+from Iofi-bot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

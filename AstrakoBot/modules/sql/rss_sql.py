@@ -1,6 +1,6 @@
 import threading
 
-from AstrakoBot.modules.sql import BASE, SESSION
+from Iofi-bot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, UnicodeText
 
 

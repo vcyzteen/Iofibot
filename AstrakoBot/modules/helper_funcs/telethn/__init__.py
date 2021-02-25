@@ -1,4 +1,4 @@
-from AstrakoBot import DEV_USERS, DRAGONS, DEMONS, WOLVES, telethn
+from Iofi-bot import DEV_USERS, DRAGONS, DEMONS, WOLVES, telethn
 
 IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + DEV_USERS
 

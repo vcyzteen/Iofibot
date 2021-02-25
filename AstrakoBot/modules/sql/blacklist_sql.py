@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
 
-from AstrakoBot.modules.sql import SESSION, BASE
+from Iofi-bot.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):

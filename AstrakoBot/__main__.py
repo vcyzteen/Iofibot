@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from AstrakoBot import (
+from Iofi-bot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -24,9 +24,9 @@ from AstrakoBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from AstrakoBot.modules import ALL_MODULES
-from AstrakoBot.modules.helper_funcs.chat_status import is_user_admin
-from AstrakoBot.modules.helper_funcs.misc import paginate_modules
+from Iofi-bot.modules import ALL_MODULES
+from Iofi-bot.modules.helper_funcs.chat_status import is_user_admin
+from Iofi-bot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -100,10 +100,10 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://i.imgur.com/1oah5E2.jpg"
+Iofi-bot_IMG = "https://i.imgur.com/1oah5E2.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
+Iofi-bot is hosted on its own server and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
@@ -118,7 +118,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("AstrakoBot.modules." + module_name)
+    imported_module = importlib.import_module("Iofi-bot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -212,7 +212,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                ASTRAKOBOT_IMG,
+                Iofi-bot_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="Add Iofi-bot to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -231,7 +231,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                                url=f"https://t.me/Iofi-botSupport",
                             ),
                         ],
                         [
@@ -243,7 +243,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Source code",
-                                url="https://github.com/Astrako/AstrakoBot",
+                                url="https://github.com/vcyzteen/Iofi-bot",
                             )
                         ],
                     ]

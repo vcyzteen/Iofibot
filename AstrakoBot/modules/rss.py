@@ -2,9 +2,9 @@ import html
 import re
 
 from feedparser import parse
-from AstrakoBot import dispatcher, updater
-from AstrakoBot.modules.helper_funcs.chat_status import user_admin
-from AstrakoBot.modules.sql import rss_sql as sql
+from Iofi-bot import dispatcher, updater
+from Iofi-bot.modules.helper_funcs.chat_status import user_admin
+from Iofi-bot.modules.sql import rss_sql as sql
 from telegram import ParseMode, Update, constants
 from telegram.ext import CallbackContext, CommandHandler
 

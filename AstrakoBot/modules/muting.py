@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from AstrakoBot import LOGGER, dispatcher
-from AstrakoBot.modules.helper_funcs.chat_status import (
+from Iofi-bot import LOGGER, dispatcher
+from Iofi-bot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from AstrakoBot.modules.helper_funcs.extraction import (
+from Iofi-bot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AstrakoBot.modules.helper_funcs.string_handling import extract_time
-from AstrakoBot.modules.log_channel import loggable
+from Iofi-bot.modules.helper_funcs.string_handling import extract_time
+from Iofi-bot.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

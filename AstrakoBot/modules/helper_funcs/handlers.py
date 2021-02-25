@@ -1,6 +1,6 @@
-import AstrakoBot.modules.sql.blacklistusers_sql as sql
-from AstrakoBot import ALLOW_EXCL
-from AstrakoBot import DEV_USERS, DRAGONS, DEMONS, WOLVES
+import Iofi-bot.modules.sql.blacklistusers_sql as sql
+from Iofi-bot import ALLOW_EXCL
+from Iofi-bot import DEV_USERS, DRAGONS, DEMONS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters

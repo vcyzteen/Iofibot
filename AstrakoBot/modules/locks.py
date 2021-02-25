@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import AstrakoBot.modules.sql.locks_sql as sql
-from AstrakoBot import dispatcher, DRAGONS, LOGGER
-from AstrakoBot.modules.disable import DisableAbleCommandHandler
-from AstrakoBot.modules.helper_funcs.chat_status import (
+import Iofi-bot.modules.sql.locks_sql as sql
+from Iofi-bot import dispatcher, DRAGONS, LOGGER
+from Iofi-bot.modules.disable import DisableAbleCommandHandler
+from Iofi-bot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from AstrakoBot.modules.log_channel import loggable
-from AstrakoBot.modules.connection import connected
-from AstrakoBot.modules.sql.approve_sql import is_approved
-from AstrakoBot.modules.helper_funcs.alternate import send_message, typing_action
+from Iofi-bot.modules.log_channel import loggable
+from Iofi-bot.modules.connection import connected
+from Iofi-bot.modules.sql.approve_sql import is_approved
+from Iofi-bot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

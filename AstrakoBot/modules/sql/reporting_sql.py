@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from AstrakoBot.modules.sql import BASE, SESSION
+from Iofi-bot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String
 
 

@@ -1,16 +1,16 @@
 # Config files, logs and stuff
-AstrakoBot/modules/helper_funcs/temp.txt
-AstrakoBot/elevated_users.json
-AstrakoBot/config.py
-AstrakoBot/config.ini
+Iofi-bot/modules/helper_funcs/temp.txt
+Iofi-bot/elevated_users.json
+Iofi-bot/config.py
+Iofi-bot/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-AstrakoBot/*.session
-AstrakoBot/*.session-journal
-astrakobot.session-journal
+Iofi-bot/*.session
+Iofi-bot/*.session-journal
+Iofi-bot.session-journal
 *.session-journal
 *.session
 

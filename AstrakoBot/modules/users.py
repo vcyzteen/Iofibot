@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import AstrakoBot.modules.sql.users_sql as sql
-from AstrakoBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from AstrakoBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from AstrakoBot.modules.sql.users_sql import get_all_users
+import Iofi-bot.modules.sql.users_sql as sql
+from Iofi-bot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Iofi-bot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Iofi-bot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
