@@ -100,7 +100,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-Iofibot_IMG = "https://i.imgur.com/1oah5E2.jpg"
+Iofibot_IMG = ""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Iofibot is hosted on its own server and doesn't require any donations as of now but \
