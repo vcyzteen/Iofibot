@@ -429,6 +429,8 @@ async def quotly(event):
     if event.fwd_from:
         return
     reply = await event.get_reply_message()
+    if reply is None:
+        return
     msg = reply.message
     repliedreply = await reply.get_reply_message()
     user = (
